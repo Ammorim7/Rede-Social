@@ -1,2 +1,2 @@
 # Rede-Social
-aaa
+Protótipo de uma rede social, com tela de login e main page.

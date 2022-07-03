@@ -9,7 +9,7 @@ body, html{
 }
 
 body{
-    background-color: #20442b;
+    background-color: #000000da;
 }
 
 #main{
@@ -168,11 +168,11 @@ body{
 }
 
 #fofocar{
-    background-color: #8eeaa76c;
+    background-color: #8eeaa785;
     color: white;
     margin-right: 2%;
 }
 
 #fofocar:hover{
-    background-color: rgba(255, 255, 255, 0.404);
+    background-color: #8eeaa752;
 }

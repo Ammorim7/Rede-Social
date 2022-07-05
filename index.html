@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
     <title>Social Space - entre ou cadastre-se</title>
     <link rel="stylesheet" href="style-login.css">
+    <script defer src="script-index.js"></script>
 </head>
 <body>
     <div id="main">
@@ -15,9 +16,9 @@
             <p>Conecte-se e compartilhe seus momentos incríveis com seus seguidores!</p>
         </div>
         <div id="card">
-            <input type="text" class="login" id="email" placeholder="e-mail">
+            <input type="text" class="login" id="usuario" placeholder="usuario">
             <input type="password" class="login" id="senha" placeholder="senha">
-            <input type="button" value="entrar" class="login" id="btnEntrar">
+            <input type="button" value="entrar" class="login" id="btnEntrar" onclick="logar()">
             <a href="#">Esqueci a senha</a>
             <hr>
             <input type="button" value="cadastre-se" id="btnCadastrar">

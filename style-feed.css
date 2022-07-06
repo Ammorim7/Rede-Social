@@ -1,3 +1,4 @@
+/* Resetando alguns estilos e configurando a tela para a estilização do site */
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +15,7 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
 
 #main{
     width:100%;
@@ -32,6 +34,8 @@ body{
     height: 100%;
 }
 
+
+/* Estilização do header */
 #header{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.185);
@@ -72,6 +76,8 @@ body{
     height: 100%;
 }
 
+
+/* Estilização da barra de navegação */
 #navbar{
     border-right: 1px solid #8eeaa736;
     position: fixed;
@@ -108,113 +114,13 @@ body{
     background-color: rgba(255, 255, 255, 0.062);
 }
 
+
+/* Estilização do feed */
 #feed{
     margin-left: 20%;
     margin-right: 30%;
     width: 60%;
     height: 100%;
-}
-
-.post{
-    display: flex;
-    flex-direction: column;
-    border-radius: 0.5em;
-    background-color: rgba(0, 0, 0, 0.123);
-    margin-top: 0.6em;
-    width: 100%;
-    color: rgba(255, 255, 255, 0.39);
-}
-
-.cabecalho-post{
-    padding: 0.5em;
-    display: flex;
-}
-
-.cabecalho-post img{
-    margin-right: 0.5em;
-    width: 3em;
-    border-radius: 50%;
-}
-
-.conteudo-post{
-    padding: 0.5em;
-    padding-bottom: 0;
-}
-
-.conteudo-post img{
-    margin-top: 0.2em;
-    max-width: 100%;
-}
-
-.interacoes-post{
-    width: 97.5%;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5em;
-}
-
-.interacoes-icons{
-    display: flex;
-}
-
-.interacoes-icons svg{
-    fill: #8eeaa7;
-    margin-right: 0.3em;
-    width: 1em;
-}
-
-#conversas{
-    border-left: 1px solid #8eeaa736;
-    overflow-y: scroll;
-    position: fixed;
-    margin-left: 49%;
-    width: 21%;
-    height: 93.7%;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;
-}
-#conversas::-webkit-scrollbar{
-    display: none;
-}
-
-.mensagem{
-    align-items: center;
-    display: flex;
-    width: 100%;
-    height: 8%;
-}
-
-.mensagem-usuario-texto{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 75%;
-    width: 87%;
-    margin-right: 0.5em;
-}
-
-.usuario{
-    margin-bottom: 1%;
-    color: rgba(255, 255, 255, 0.39);
-}
-
-.mensagemTexto{
-    height: 90%;
-    color: rgba(255, 255, 255, 0.39);
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.mensagem img{
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    border-radius: 50%;
-    width: 3em;
-}
-
-.mensagem:hover{
-    background-color: rgba(255, 255, 255, 0.041);
 }
 
 #novoPost{
@@ -303,4 +209,108 @@ body{
 
 #fofocar:hover{
     background-color: #8eeaa752;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+    background-color: rgba(0, 0, 0, 0.123);
+    margin-top: 0.6em;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.39);
+}
+
+.cabecalho-post{
+    padding: 0.5em;
+    display: flex;
+}
+
+.cabecalho-post img{
+    margin-right: 0.5em;
+    width: 3em;
+    border-radius: 50%;
+}
+
+.conteudo-post{
+    padding: 0.5em;
+    padding-bottom: 0;
+}
+
+.conteudo-post img{
+    margin-top: 0.2em;
+    max-width: 100%;
+}
+
+.interacoes-post{
+    width: 97.5%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+.interacoes-icons{
+    display: flex;
+}
+
+.interacoes-icons svg{
+    fill: #8eeaa7;
+    margin-right: 0.3em;
+    width: 1em;
+}
+
+
+/* Estilização das caixas de mensagem */
+#conversas{
+    border-left: 1px solid #8eeaa736;
+    overflow-y: scroll;
+    position: fixed;
+    margin-left: 49%;
+    width: 21%;
+    height: 93.7%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+#conversas::-webkit-scrollbar{
+    display: none;
+}
+
+.mensagem{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 8%;
+}
+
+.mensagem-usuario-texto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 75%;
+    width: 87%;
+    margin-right: 0.5em;
+}
+
+.usuario{
+    margin-bottom: 1%;
+    color: rgba(255, 255, 255, 0.39);
+}
+
+.mensagemTexto{
+    height: 90%;
+    color: rgba(255, 255, 255, 0.39);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mensagem img{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border-radius: 50%;
+    width: 3em;
+}
+
+.mensagem:hover{
+    background-color: rgba(255, 255, 255, 0.041);
 }

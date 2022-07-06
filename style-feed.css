@@ -34,7 +34,7 @@ body{
 
 #header{
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.123);
+    background-color: rgba(0, 0, 0, 0.185);
     display: flex;
     justify-content: center ;
     align-items: space-around;
@@ -73,6 +73,7 @@ body{
 }
 
 #navbar{
+    border-right: 1px solid #8eeaa736;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -110,18 +111,68 @@ body{
 #feed{
     margin-left: 20%;
     margin-right: 30%;
-    border-left: 1px solid #8eeaa736;
-    border-right: 1px solid #8eeaa736;
     width: 60%;
     height: 100%;
 }
 
+.post{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+    background-color: rgba(0, 0, 0, 0.123);
+    margin-top: 0.6em;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.39);
+}
+
+.cabecalho-post{
+    padding: 0.5em;
+    display: flex;
+}
+
+.cabecalho-post img{
+    margin-right: 0.5em;
+    width: 3em;
+    border-radius: 50%;
+}
+
+.conteudo-post{
+    padding: 0.5em;
+    padding-bottom: 0;
+}
+
+.conteudo-post img{
+    margin-top: 0.2em;
+    max-width: 100%;
+}
+
+.interacoes-post{
+    width: 97.5%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+.interacoes-icons{
+    display: flex;
+}
+
+.interacoes-icons svg{
+    fill: #8eeaa7;
+    margin-right: 0.3em;
+    width: 1em;
+}
+
 #conversas{
+    border-left: 1px solid #8eeaa736;
     overflow-y: scroll;
     position: fixed;
     margin-left: 49%;
     width: 21%;
     height: 93.7%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
 }
 #conversas::-webkit-scrollbar{
     display: none;
